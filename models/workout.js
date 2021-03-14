@@ -2,6 +2,8 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
+console.log("sup")
+
 const workoutSchema = new Schema({
     day: {
         type: Date,
@@ -14,18 +16,30 @@ const workoutSchema = new Schema({
                 trim: true,
             },
             name: {
-                type: STING,
+                type: STRING,
             },
             duration: {
                 type: INTEGER,
             },
-            weight: 
-
-        }
-
+            weight: {
+                type: INTEGER,
+            },
+            reps: {
+                type: INTEGER,
+            },
+            sets: {
+                type: INTEGER
+            },
+            duration: {
+                type: INTEGER,
+            },
+            distance: {
+                type: INTEGER,
+            },
+        },
     ],
 });
 
-const Transaction = mongoose.model("Transaction", transactionSchema);
+const Workout = mongoose.model("Workout", workoutSchema);
 
-module.exports = Transaction;
+module.exports = Workout;
