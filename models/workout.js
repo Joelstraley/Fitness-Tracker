@@ -2,39 +2,37 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-console.log("sup")
-
 const workoutSchema = new Schema({
     day: {
         type: Date,
         default: Date.now
     },
     exercises: [
-        {
+            {
             type: {
-                type: STRING,
-                trim: true,
+                type: String,
+                trim: true
             },
             name: {
-                type: STRING,
+                type: String,
             },
             duration: {
-                type: INTEGER,
+                type: Number,
             },
             weight: {
-                type: INTEGER,
+                type: Number,
             },
             reps: {
-                type: INTEGER,
+                type: Number,
             },
             sets: {
-                type: INTEGER
+                type: Number,
             },
             duration: {
-                type: INTEGER,
+                type: Number,
             },
             distance: {
-                type: INTEGER,
+                type: Number,
             },
         },
     ],
