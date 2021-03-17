@@ -30,7 +30,7 @@ router.post("/api/workouts", (req, res) => {
     });
 });
 
-router.put("/api/workouts/:id", ({body, params}, res) => {
+router.put("/api/workouts/:id", ({ body, params }, res) => {
     Workout.findOneAndUpdate(
         {_id: params.id},
         {$push: {exercises: body }},
@@ -51,6 +51,6 @@ router.get("/api/workouts/range", (req, res) => {
     .catch(err => {
       res.status(400).json(err);
     });
-});
+}); 
 
 module.exports = router
