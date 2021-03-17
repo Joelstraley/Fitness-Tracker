@@ -10,7 +10,7 @@ Their duration and daily progress will be tracked on the dashboard.
 * [Usage](#Usage)
 * [License](#License)
 * [Contributing](#Contributing)
-* [Tests](#Tests)
+* [Technologies](#Technologies)
 * [Questions](#Questions)
 ## <a name="Installation">Installation</a>
 n/a
@@ -18,7 +18,8 @@ n/a
 n/a
 
 Screenshot: 
-![alt text]()
+![alt text](https://github.com/Joelstraley/Fitness-Tracker/blob/master/public/assets/Fitness%20Tracker%20App.png?raw=true)
+
 ## <a name="License">License</a>
 This is free and unencumbered software released into the public domain.
     
@@ -46,8 +47,8 @@ This is free and unencumbered software released into the public domain.
             For more information, please refer to <https://unlicense.org>
 ## <a name="Contributing">Contributing</a>
 n/a
-## <a name="Tests">Tests</a>
-n/a
+## <a name="Technologies">Technologies:</a>
+MongoDB, Heroku, Express, Node.JS 
 ## <a name="Questions">Questions</a>
 For questions please reach out to [github.com/JoelStraley](github.com/JoelStraley) 
 or email me at [JoelStraley@gmail.com](mailto:JoelStraley@gmail.com)
