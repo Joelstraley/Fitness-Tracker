@@ -11,7 +11,8 @@ router.get("/api/workouts", (req, res) => {
             total += element.duration;
           });
           workout.totalDuration = total;
-        }); 
+        });  
+        console.log(dbWorkout)
         res.json(dbWorkout);
       }) 
       .catch(err => {
@@ -46,6 +47,17 @@ router.put("/api/workouts/:id", ({ body, params }, res) => {
 router.get("/api/workouts/range", (req, res) => {
   Workout.find({})
     .then(dbWorkout => {
+      /*   Workout.aggregate({
+                $group: {
+                    _id: '',
+                    totalDuration: { $sum: '$duration' }
+                }
+             }, {
+                $project: {
+                    _id: 0,
+                    duration: '$duration'
+                }
+            }) */
       res.json(dbWorkout);
     })
     .catch(err => {
