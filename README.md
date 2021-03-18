@@ -13,6 +13,7 @@ Their duration and daily progress will be tracked on the dashboard.
 
 
 Screenshot: 
+
 ![alt text](https://github.com/Joelstraley/Fitness-Tracker/blob/master/public/assets/Fitness%20Tracker%20App.png?raw=true)
 
 ## <a name="Technologies">Technologies:</a>
